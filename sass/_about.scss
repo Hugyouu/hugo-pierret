@@ -31,3 +31,30 @@
   text-align: center;
   margin: 5px auto;
 }
+
+.tech-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee i {
+  font-size: 3rem;
+  margin-right: 30px;
+}

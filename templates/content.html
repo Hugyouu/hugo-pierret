@@ -1,65 +1,84 @@
 {% macro about() %}
- <div class="user-details">
-  <h1> My Expertise </h1>
-  <p> {{ config.extra.user_description }} </p>
-</div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-</div>
-{% endmacro about %}
-
-{% macro projects() %}
 <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1>My Expertise</h1>
+  <p>{{ config.extra.user_description }}</p>
+</div>
+<div class="tech-carousel">
+  <div class="marquee">
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-css3-plain-wordmark colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-react-original-wordmark colored"></i>
+    <i class="devicon-nodejs-plain-wordmark"></i>
+    <i class="devicon-sass-original colored"></i>
+    <i class="devicon-java-plain-wordmark colored"></i>
+    <i class="devicon-csharp-plain-wordmark colored"></i>
+    <i class="devicon-c-plain colored"></i>
+    <i class="devicon-dotnetcore-plain colored"></i>
+    <i class="devicon-python-plain colored"></i>
+    <i class="devicon-kotlin-plain-wordmark colored"></i>
+    <i class="devicon-php-plain colored"></i>
+    <i class="devicon-mysql-plain-wordmark colored"></i>
+    <i class="devicon-git-plain"></i>
+    <!-- Duplication des icônes pour un défilement infini -->
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-css3-plain-wordmark colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-react-original-wordmark colored"></i>
+    <i class="devicon-nodejs-plain-wordmark"></i>
+    <i class="devicon-sass-original colored"></i>
+    <i class="devicon-java-plain-wordmark colored"></i>
+    <i class="devicon-csharp-plain-wordmark colored"></i>
+    <i class="devicon-c-plain colored"></i>
+    <i class="devicon-dotnetcore-plain colored"></i>
+    <i class="devicon-python-plain colored"></i>
+    <i class="devicon-kotlin-plain-wordmark colored"></i>
+    <i class="devicon-php-plain colored"></i>
+    <i class="devicon-mysql-plain-wordmark colored"></i>
+    <i class="devicon-git-plain"></i>
+  </div>
+</div>
+{% endmacro about %} {% macro projects() %}
+<div class="user-details">
+  <h1>Featured Projects</h1>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/kevin-bacon.png" }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3>Application Android - 6 Degrees of Kevin Bacon</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li>Kotlin</li>
+      <li>
+        <a href="https://developer.themoviedb.org/docs/getting-started">TMDB</a>
+      </li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>
+      Je prévois de développer une application Android qui suit le principe des
+      6 degrés de Kevin Bacon. Cette application permettra aux utilisateurs de
+      découvrir les liens entre différents acteurs à travers une chaîne de
+      connexions de films.
+    </p>
     <a class="project-link" href="#">Check it out</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="mountains" src="{{ config.base_url ~ "/img/where.png" }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3>Project Title</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li>Featured Skills</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
     <a class="project-link" href="#">Check it out</a>
   </div>
 </div>
 {% endmacro projects %}
-
