@@ -17,7 +17,7 @@ jobs:
           git config --global user.email "actions@github.com"
       - name: build
         run: |
-          export BASE_URL="https://hugyouu.github.io/hugo-pierret"
+          $env:BASE_URL="https://hugyouu.github.io/hugo-pierret"
           zola build
       - name: deploy
         uses: shalzz/zola-deploy-action@v0.18.0
