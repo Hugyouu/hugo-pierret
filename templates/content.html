@@ -46,16 +46,17 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/kevin-bacon.png" }}" />
+    <img alt="kevin bacon" src="{{ config.base_url ~ "/images/kevin-bacon.png" }}" />
   </div>
   <div class="contents">
     <h3>Application Android - 6 Degrees of Kevin Bacon</h3>
-    <ul>
-      <li>Kotlin</li>
-      <li>
-        <a href="https://developer.themoviedb.org/docs/getting-started">TMDB</a>
-      </li>
-    </ul>
+    <div class="tech-stack">
+      <i class="devicon-kotlin-plain"></i>
+      <i class="devicon-android-plain colored" title="Android"></i>
+      <a href="https://developer.themoviedb.org/docs/getting-started" title="TMDB API">
+        <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB API" class="custom-icon" />
+      </a>
+    </div>
     <p>
       Je prévois de développer une application Android qui suit le principe des
       6 degrés de Kevin Bacon. Cette application permettra aux utilisateurs de
@@ -67,23 +68,26 @@
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="Letterboxd Poster Downloader" src="{{ config.base_url ~ "/img/letterboxd-poster-downloader.png" }}" />
+    <img alt="Letterboxd Poster Downloader" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJlenhxNDkxcjZ5NG9sNDgwNHBtNXE1MG5sODE3MmVodzBtN3owbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uGhT1O4sxpi8/giphy.gif" />
   </div>
   <div class="contents-right">
     <h3>Letterboxd Poster Downloader</h3>
-    <ul>
-      <li>React</li>
-      <li>Flask</li>
-      <li>CSV Processing</li>
-      <li>API Integration</li>
-    </ul>
+    <div class="tech-stack">
+      <i class="devicon-react-original colored" title="React"></i>
+      <i class="devicon-flask-original" title="Flask"></i>
+      <i class="devicon-python-plain colored" title="Python"></i>
+      <i class="devicon-csv-plain colored" title="CSV Processing"></i>
+      <a href="https://developer.themoviedb.org/docs/getting-started" title="TMDB API">
+        <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB API" class="custom-icon" />
+      </a>
+    </div>
     <p>
-      Une application web React/Flask qui permet d'importer un journal Letterboxd au format CSV,
+      Une application web React/Flask qui permet d'importer son calendrier Letterboxd au format CSV,
       puis de télécharger les posters des films préférés de l'utilisateur. Cette application combine
       le front-end React pour une interface utilisateur dynamique avec un back-end Flask pour le
       traitement des données et l'interaction avec les APIs de films.
     </p>
-    <a class="project-link" href="#">Découvrir le projet</a>
+    <a class="project-link" href="#">Check it out</a>
   </div>
 </div>
 {% endmacro projects %}

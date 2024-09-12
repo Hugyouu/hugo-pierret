@@ -7,8 +7,8 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | striptags | trim | truncate(length=160) }}{% else %}{{ config.description }}{% endif %}">
-
-  <link rel="stylesheet" href="{{ config.base_url ~ "/main.css" }}">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="{{ config.base_url ~ "/main.css" }}">
 </head>
 {% endmacro head %}
 

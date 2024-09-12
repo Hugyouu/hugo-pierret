@@ -34,6 +34,10 @@
     margin-left: 0;
     width: 48%;
   }
+
+  h3:first-child {
+    margin-top: 0;
+  }
 }
 
 .contents-right {
@@ -41,10 +45,6 @@
     float: right;
     margin-top: -5%;
     width: 48%;
-  }
-
-  h3:first-child {
-    margin-top: 0;
   }
 }
 .images-right {
@@ -69,6 +69,26 @@
       float: left;
     }
   }
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tech-stack i, .tech-stack img {
+  font-size: 2em;
+}
+
+.tech-stack img {
+  max-height: 32px;
+}
+
+.custom-icon {
+  height: 2em;
+  width: auto;
 }
 
 .project-link {
