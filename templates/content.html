@@ -1,9 +1,34 @@
 {% macro about() %}
 <div class="user-details">
-  <h1>My Expertise</h1>
-  <p>{{ config.extra.user_description }}</p>
+  <h2>Profil Personnel</h2>
+  <p>
+    {{ config.extra.user_profile }}
+  </p>
 </div>
+
+<div class="user-details">
+  <h2>Parcours et Formation</h2>
+  <ul class="formations">
+    <li>
+      <strong>2022 - Présent :</strong> Bachelier en Développement d'application, HELMo
+      <ul>
+        <li>Membre du projet GRICOR du parcours <a href="https://salto.helmo.be">SALTO</a></li>
+      </ul>
+    </li>
+    <li>
+      <strong>2020 - 2022 :</strong> Bachelier en Ingénieur civil, ULiège
+    </li>
+    <li>
+      <strong>2014 - 2020 :</strong> Enseignement secondaire, Athénée Royal de Huy
+      <ul>
+        <li>Option mathématiques 8h, sciences 7h</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
 <div class="tech-carousel">
+  <h3>Technologies</h3>
   <div class="marquee">
     <i class="devicon-html5-plain-wordmark"></i>
     <i class="devicon-css3-plain-wordmark colored"></i>
@@ -16,7 +41,7 @@
     <i class="devicon-c-plain colored"></i>
     <i class="devicon-dotnetcore-plain colored"></i>
     <i class="devicon-python-plain colored"></i>
-    <i class="devicon-kotlin-plain-wordmark colored"></i>
+    <i class="devicon-kotlin-plain colored"></i>
     <i class="devicon-php-plain colored"></i>
     <i class="devicon-mysql-plain-wordmark colored"></i>
     <i class="devicon-git-plain"></i>
@@ -32,7 +57,7 @@
     <i class="devicon-c-plain colored"></i>
     <i class="devicon-dotnetcore-plain colored"></i>
     <i class="devicon-python-plain colored"></i>
-    <i class="devicon-kotlin-plain-wordmark colored"></i>
+    <i class="devicon-kotlin-plain colored"></i>
     <i class="devicon-php-plain colored"></i>
     <i class="devicon-mysql-plain-wordmark colored"></i>
     <i class="devicon-git-plain"></i>
@@ -51,8 +76,7 @@
   <div class="contents">
     <h3>Application Android - 6 Degrees of Kevin Bacon</h3>
     <div class="tech-stack">
-      <i class="devicon-kotlin-plain"></i>
-      <i class="devicon-android-plain colored" title="Android"></i>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" title="kotlin" />
       <a href="https://developer.themoviedb.org/docs/getting-started" title="TMDB API">
         <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB API" class="custom-icon" />
       </a>
@@ -64,6 +88,7 @@
       connexions de films.
     </p>
     <a class="project-link" href="#">Check it out</a>
+    <a class="project-link" href="https://hollywoodle.vercel.app">Exemple</a>
   </div>
 </div>
 <div class="user-projects">
@@ -75,7 +100,6 @@
     <div class="tech-stack">
       <i class="devicon-react-original colored" title="React"></i>
       <i class="devicon-flask-original" title="Flask"></i>
-      <i class="devicon-python-plain colored" title="Python"></i>
       <i class="devicon-csv-plain colored" title="CSV Processing"></i>
       <a href="https://developer.themoviedb.org/docs/getting-started" title="TMDB API">
         <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB API" class="custom-icon" />

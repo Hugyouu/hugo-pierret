@@ -1,6 +1,6 @@
 # The URL the site will be built for
-base_url = "https://hugyouu.github.io/hugo-pierret/"
-# base_url = "http://127.0.0.1:1111"
+# base_url = "https://hugyouu.github.io/hugo-pierret/"
+base_url = "http://127.0.0.1:1111"
 
 title = "Hugo Pierret"
 description = "A blog about me"
@@ -22,7 +22,7 @@ default_language = "fr"
 [extra]
 # User settings
 username = "Hugo Pierret"
-user_description = "Passionné par le développement et l'innovation technologique, je suis un étudiant en informatique déterminé à faire progresser mes compétences et à contribuer à des projets significatifs."
+user_profile = "Étudiant de 21 ans en 2e Bachelier Développement d'application à l'HELMo.\nJe me qualifie comme discret et timide mais avec un bon sens de l'organisation et de rigueur.\nLe travail en équipe m'attire tout comme le travail seul."
 user_title = "Student Developer"
 email = "h.pierret@student.helmo.be"
 twitter_username = "lorem_ipsum"
@@ -30,4 +30,4 @@ github_username =  "lorem_ipsum"
 gplus_username =  "lorem_ipsum"
 
 # Google-analytics
-google_analytics.id = ""
+google_analytics.id = "G-7E3VQWV7M2"

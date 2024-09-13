@@ -1,12 +1,29 @@
 
 {% macro head() %}
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WG77ZDP9');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7E3VQWV7M2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description | striptags | trim | truncate(length=160) }}{% else %}{{ config.description }}{% endif %}">
+        gtag('config', 'G-7E3VQWV7M2');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ config.title }}{% endif %}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ config.base_url ~ "/images/hp.svg" }}">
+    <meta name="description" content="{% if page.description %}{{ page.description | striptags | trim | truncate(length=160) }}{% else %}{{ config.description }}{% endif %}">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="{{ config.base_url ~ "/main.css" }}">
 </head>
@@ -32,7 +49,7 @@
       <div class="header-icons">
         <a aria-label="Send email" href="mailto:h.pierret@student.helmo.be"><i class="icon fa fa-envelope"></i></a>
         <a aria-label="My Github" target="_blank" href="https://github.com/Hugyouu"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="Open my CV" target="_blank" href="document/resume.pdf"><i class="icon fa fa-file-pdf-o" aria-hidden="true"></i></a>
+        <a aria-label="Open my CV" target="_blank" href="documents/resume.pdf"><i class="icon fa fa-file-pdf-o" aria-hidden="true"></i></a>
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
