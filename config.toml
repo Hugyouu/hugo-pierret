@@ -1,6 +1,6 @@
 # The URL the site will be built for
 # base_url = "https://hugyouu.github.io/hugo-pierret/"
-base_url = "www.hugo-pierret.be"
+base_url = "/"
 # base_url = "http://127.0.0.1:1111"
 
 title = "Hugo Pierret"
