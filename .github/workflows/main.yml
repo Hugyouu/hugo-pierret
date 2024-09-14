@@ -17,7 +17,7 @@ jobs:
           chmod +x /usr/local/bin/zola
       - name: build
         run: |
-          export BASE_URL="https://hugyouu.github.io/hugo-pierret"
+          export BASE_URL="http://www.hugo-pierret.be/"
           zola build
       - name: deploy
         uses: shalzz/zola-deploy-action@v0.18.0
