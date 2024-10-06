@@ -9,13 +9,15 @@
     width: 80%;
   }
 }
-
 .user-projects {
   margin: 20px auto;
   img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+  }
+  h3 {
+    margin-top: 0;
   }
   h5 {
     margin: 0;
@@ -28,22 +30,15 @@
     margin-right: 5px;
   }
 }
-
 .contents {
   @media only screen and (min-width: $cut) {
     margin-left: 0;
     width: 48%;
   }
-
-  h3:first-child {
-    margin-top: 0;
-  }
 }
-
 .contents-right {
   @media only screen and (min-width: $cut) {
     float: right;
-    margin-top: -5%;
     width: 48%;
   }
 }
@@ -58,7 +53,6 @@
     }
   }
 }
-
 .images-left {
   @media only screen and (min-width: $cut) {
     float: left;
@@ -70,27 +64,33 @@
     }
   }
 }
-
 .tech-stack {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 15px;
 }
-
-.tech-stack i, .tech-stack img {
+.tech-stack i,
+.tech-stack img {
   font-size: 2em;
 }
-
 .tech-stack img {
   max-height: 32px;
 }
-
 .custom-icon {
   height: 2em;
   width: auto;
 }
-
+.project-status {
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+.project-link-info {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
 .project-link {
   display: inline-block;
   margin: 10px 0px;
@@ -103,23 +103,30 @@
   outline: none;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out,
+    border-color 0.3s ease-out;
   &:hover {
     background-color: $purple;
     border-color: $purple;
     color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
   }
   &:active {
     background-color: $purple;
     border-color: $purple;
     color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
+  }
+}
+.project-link.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border-color: $main;
+    color: $main;
   }
 }

@@ -1,25 +1,26 @@
 {% macro about() %}
 <div class="user-details">
   <h2>Profil Personnel</h2>
-  <p>
-    {{ config.extra.user_profile }}
-  </p>
+  <p>{{ config.extra.user_profile }}</p>
 </div>
 
 <div class="user-details">
   <h2>Parcours et Formation</h2>
   <ul class="formations">
     <li>
-      <strong>2022 - Présent :</strong> Bachelier en Développement d'application, HELMo
+      <strong>2022 - Présent :</strong> Bachelier en Développement
+      d'application, HELMo
       <ul>
-        <li>Membre du projet GRICOR du parcours <a href="https://salto.helmo.be">SALTO</a></li>
+        <li>
+          Membre du projet GRICOR du parcours
+          <a href="https://salto.helmo.be">SALTO</a>
+        </li>
       </ul>
     </li>
+    <li><strong>2020 - 2022 :</strong> Bachelier en Ingénieur civil, ULiège</li>
     <li>
-      <strong>2020 - 2022 :</strong> Bachelier en Ingénieur civil, ULiège
-    </li>
-    <li>
-      <strong>2014 - 2020 :</strong> Enseignement secondaire, Athénée Royal de Huy
+      <strong>2014 - 2020 :</strong> Enseignement secondaire, Athénée Royal de
+      Huy
       <ul>
         <li>Option mathématiques 8h, sciences 7h</li>
       </ul>
@@ -63,22 +64,29 @@
     <i class="devicon-git-plain"></i>
   </div>
 </div>
-{% endmacro about %}
-
-{% macro projects() %}
+{% endmacro about %} {% macro projects() %}
 <div class="user-details">
   <h1>Featured Projects</h1>
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="kevin bacon" src="{{ config.base_url ~ "/images/kevin-bacon.png" }}" />
+    <img alt="kevin bacon" src="{{ config.base_url ~ "/images/kevin-bacon.png"
+    }}" />
   </div>
   <div class="contents">
     <h3>Application Android - 6 Degrees of Kevin Bacon</h3>
+    <div class="project-status">Statut : Concept</div>
     <div class="tech-stack">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" title="kotlin" />
-      <a href="https://developer.themoviedb.org/docs/getting-started" title="TMDB API">
-        <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB API" class="custom-icon" />
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+        title="kotlin"
+      />
+      <a
+        href="https://developer.themoviedb.org/docs/getting-started"
+        title="TMDB API"
+      >
+        <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB
+        API" class="custom-icon" />
       </a>
     </div>
     <p>
@@ -87,31 +95,45 @@
       découvrir les liens entre différents acteurs à travers une chaîne de
       connexions de films.
     </p>
-    <a class="project-link" href="#">Check it out</a>
+
     <a class="project-link" href="https://hollywoodle.vercel.app">Exemple</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="Letterboxd Poster Downloader" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJlenhxNDkxcjZ5NG9sNDgwNHBtNXE1MG5sODE3MmVodzBtN3owbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uGhT1O4sxpi8/giphy.gif" />
+    <img
+      alt="Letterboxd Poster Downloader"
+      src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJlenhxNDkxcjZ5NG9sNDgwNHBtNXE1MG5sODE3MmVodzBtN3owbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uGhT1O4sxpi8/giphy.gif"
+    />
   </div>
   <div class="contents-right">
     <h3>Letterboxd Poster Downloader</h3>
+    <div class="project-status">Statut : En développement</div>
     <div class="tech-stack">
       <i class="devicon-react-original colored" title="React"></i>
       <i class="devicon-flask-original" title="Flask"></i>
       <i class="devicon-csv-plain colored" title="CSV Processing"></i>
-      <a href="https://developer.themoviedb.org/docs/getting-started" title="TMDB API">
-        <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB API" class="custom-icon" />
+      <a
+        href="https://developer.themoviedb.org/docs/getting-started"
+        title="TMDB API"
+      >
+        <img src="{{ config.base_url ~ "/images/tmdb-logo.jfif" }}" alt="TMDB
+        API" class="custom-icon" />
       </a>
     </div>
     <p>
-      Une application web React/Flask qui permet d'importer son calendrier Letterboxd au format CSV,
-      puis de télécharger les posters des films préférés de l'utilisateur. Cette application combine
-      le front-end React pour une interface utilisateur dynamique avec un back-end Flask pour le
+      Une application web React/Flask qui permet d'importer son calendrier
+      Letterboxd au format CSV, puis de télécharger les posters des films
+      préférés de l'utilisateur. Cette application combine le front-end React
+      pour une interface utilisateur dynamique avec un back-end Flask pour le
       traitement des données et l'interaction avec les APIs de films.
     </p>
-    <a class="project-link" href="#">Check it out</a>
+    <p class="project-link-info">
+      Le code source n'est pas encore disponible publiquement.
+    </p>
+    <a class="project-link disabled" href="#"
+      >Repository GitHub (Bientôt disponible)</a
+    >
   </div>
 </div>
 {% endmacro projects %}
