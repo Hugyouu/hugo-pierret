@@ -22,7 +22,7 @@ async function loadLetterboxdMovie() {
           ${poster ? `<img src="${poster}" alt="${title}" style="width:60px; border-radius:4px;">` : ''}
           <div>
             <h4 style="margin:0; font-size:1.1rem;"><a href="${link}" target="_blank" style="color:#333; text-decoration:none;">${title}</a></h4>
-            <p style="margin:0; color:#666; font-size:0.9rem;">Regardé le ${date}</p>
+            <p style="margin:0; color:#666; font-size:0.9rem; text-align: left;">Regardé le ${date}</p>
           </div>
         </div>
       `;

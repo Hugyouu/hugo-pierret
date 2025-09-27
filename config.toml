@@ -33,8 +33,8 @@ content_dir = "content/en"
 [extra]
 # User settings
 username = "Hugo Pierret"
-user_profile = "Étudiant de 22 ans en 3e Bachelier Développement d'application à l'HELMo.\nJe me qualifie comme discret et timide mais avec un bon sens de l'organisation et de rigueur.\nLe travail en équipe m'attire tout comme le travail seul."
-user_title = "Student Developer"
+user_profile = "Diplômé en Bachelier Développement d’application à l’HELMo, je suis une personne discrète et réservée, dotée d’un bon sens de l’organisation et d’une grande rigueur.\nLe travail en équipe m'attire tout comme le travail seul."
+user_title = "Application developer"
 email = "h.pierret@student.helmo.be"
 twitter_username = "lorem_ipsum"
 github_username =  "lorem_ipsum"
